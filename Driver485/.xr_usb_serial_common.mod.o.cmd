@@ -1,8 +1,8 @@
-cmd_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := gcc -Wp,-MD,/home/pconroy/Exar2/Driver485/.xr_usb_serial_common.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/6/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -DDEBUG=0  -DKBUILD_BASENAME='"xr_usb_serial_common.mod"' -DKBUILD_MODNAME='"xr_usb_serial_common"' -DMODULE  -c -o /home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o /home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.c
+cmd_/home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o := gcc -Wp,-MD,/home/pi/exar_usb_serial_driver/Driver485/.xr_usb_serial_common.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/8/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -DDEBUG=0  -DKBUILD_BASENAME='"xr_usb_serial_common.mod"' -DKBUILD_MODNAME='"xr_usb_serial_common"' -DMODULE  -c -o /home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o /home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.c
 
-source_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := /home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.c
+source_/home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o := /home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.c
 
-deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
+deps_/home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o := \
     $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/retpoline.h) \
   include/linux/kconfig.h \
@@ -191,7 +191,7 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
     $(wildcard include/config/debug/atomic/sleep.h) \
     $(wildcard include/config/arch/has/refcount.h) \
     $(wildcard include/config/panic/timeout.h) \
-  /usr/lib/gcc/arm-linux-gnueabihf/6/include/stdarg.h \
+  /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
@@ -263,14 +263,44 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
     $(wildcard include/config/iwmmxt.h) \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  include/linux/spinlock_types_up.h \
+  arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
   include/linux/rwlock_types.h \
-  include/linux/spinlock_up.h \
+  arch/arm/include/asm/spinlock.h \
   include/linux/rwlock.h \
-  include/linux/spinlock_api_up.h \
+  include/linux/spinlock_api_smp.h \
+    $(wildcard include/config/inline/spin/lock.h) \
+    $(wildcard include/config/inline/spin/lock/bh.h) \
+    $(wildcard include/config/inline/spin/lock/irq.h) \
+    $(wildcard include/config/inline/spin/lock/irqsave.h) \
+    $(wildcard include/config/inline/spin/trylock.h) \
+    $(wildcard include/config/inline/spin/trylock/bh.h) \
+    $(wildcard include/config/uninline/spin/unlock.h) \
+    $(wildcard include/config/inline/spin/unlock/bh.h) \
+    $(wildcard include/config/inline/spin/unlock/irq.h) \
+    $(wildcard include/config/inline/spin/unlock/irqrestore.h) \
+    $(wildcard include/config/generic/lockbreak.h) \
+  include/linux/rwlock_api_smp.h \
+    $(wildcard include/config/inline/read/lock.h) \
+    $(wildcard include/config/inline/write/lock.h) \
+    $(wildcard include/config/inline/read/lock/bh.h) \
+    $(wildcard include/config/inline/write/lock/bh.h) \
+    $(wildcard include/config/inline/read/lock/irq.h) \
+    $(wildcard include/config/inline/write/lock/irq.h) \
+    $(wildcard include/config/inline/read/lock/irqsave.h) \
+    $(wildcard include/config/inline/write/lock/irqsave.h) \
+    $(wildcard include/config/inline/read/trylock.h) \
+    $(wildcard include/config/inline/write/trylock.h) \
+    $(wildcard include/config/inline/read/unlock.h) \
+    $(wildcard include/config/inline/write/unlock.h) \
+    $(wildcard include/config/inline/read/unlock/bh.h) \
+    $(wildcard include/config/inline/write/unlock/bh.h) \
+    $(wildcard include/config/inline/read/unlock/irq.h) \
+    $(wildcard include/config/inline/write/unlock/irq.h) \
+    $(wildcard include/config/inline/read/unlock/irqrestore.h) \
+    $(wildcard include/config/inline/write/unlock/irqrestore.h) \
   include/linux/time32.h \
   include/linux/uidgid.h \
     $(wildcard include/config/multiuser.h) \
@@ -374,7 +404,14 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/debug/per/cpu/maps.h) \
-  include/linux/rcutiny.h \
+  include/linux/rcutree.h \
+  include/linux/workqueue.h \
+    $(wildcard include/config/debug/objects/work.h) \
+    $(wildcard include/config/freezer.h) \
+    $(wildcard include/config/wq/watchdog.h) \
+  include/linux/timer.h \
+    $(wildcard include/config/debug/objects/timers.h) \
+    $(wildcard include/config/no/hz/common.h) \
   include/linux/ktime.h \
   include/linux/jiffies.h \
   include/linux/timex.h \
@@ -388,19 +425,15 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
   include/generated/timeconst.h \
   include/linux/timekeeping.h \
   include/linux/timekeeping32.h \
-  include/linux/workqueue.h \
-    $(wildcard include/config/debug/objects/work.h) \
-    $(wildcard include/config/freezer.h) \
-    $(wildcard include/config/wq/watchdog.h) \
-  include/linux/timer.h \
-    $(wildcard include/config/debug/objects/timers.h) \
-    $(wildcard include/config/no/hz/common.h) \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
   include/linux/rcu_segcblist.h \
-  include/linux/srcutiny.h \
-  include/linux/swait.h \
+  include/linux/srcutree.h \
+  include/linux/rcu_node_tree.h \
+    $(wildcard include/config/rcu/fanout.h) \
+    $(wildcard include/config/rcu/fanout/leaf.h) \
+  include/linux/completion.h \
   include/linux/topology.h \
     $(wildcard include/config/use/percpu/numa/node/id.h) \
     $(wildcard include/config/sched/smt.h) \
@@ -408,6 +441,7 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
     $(wildcard include/config/up/late/init.h) \
   include/linux/llist.h \
     $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
+  arch/arm/include/asm/smp.h \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
@@ -420,6 +454,7 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
     $(wildcard include/config/amd/mem/encrypt.h) \
   arch/arm/include/asm/topology.h \
     $(wildcard include/config/arm/cpu/topology.h) \
+  include/linux/arch_topology.h \
   include/asm-generic/topology.h \
   include/linux/sysctl.h \
     $(wildcard include/config/sysctl.h) \
@@ -459,6 +494,6 @@ deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o: $(deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o)
+/home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o: $(deps_/home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o)
 
-$(deps_/home/pconroy/Exar2/Driver485/xr_usb_serial_common.mod.o):
+$(deps_/home/pi/exar_usb_serial_driver/Driver485/xr_usb_serial_common.mod.o):
